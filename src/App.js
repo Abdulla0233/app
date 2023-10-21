@@ -1,17 +1,16 @@
 import { useState } from "react";
 
-
-
-
 function App() {
-  const [a,seta] = useState(8)
+  const [name,setname] = useState("")
   return (
-    <div className="app">
-      <h1>{a}</h1>
-      <button onClick={() => seta((t)=>t*9)}>ADD</button>
-      <button onClick={() => seta((t)=>t/9)}>SUB</button>
-      <button onClick={() => seta((t)=>t+1)}>ADD</button>
-      <button onClick={() => seta((t)=>t-1)}>SUB</button>
+  
+
+    <div className="name"> 
+      <h1>Salam,mən {name}</h1>
+      <button type="button" onClick={() => setname("Abdullayam.")}>0</button>
+      <button type="button" onClick={() => setname("əlaçıyam.")}>1</button>
+      <button type="button" onClick={() => setname("yaxşı oxuyanam.")}>2</button>
+      <button type="button" onClick={() => setname("orta oxuyanam.")}>3</button>
     </div>
   );
 }
